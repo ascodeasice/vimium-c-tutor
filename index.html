@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html" class="active">簡介</a></li><li class="chapter-item expanded affix "><li class="part-title">基本操作</li><li class="chapter-item expanded "><a href="vim-motion.html"><strong aria-hidden="true">1.</strong> Vim Motion 簡介</a></li><li class="chapter-item expanded "><a href="movement.html"><strong aria-hidden="true">2.</strong> 移動</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="basic-movement.html"><strong aria-hidden="true">2.1.</strong> 上下左右</a></li><li class="chapter-item expanded "><a href="vertical.html"><strong aria-hidden="true">2.2.</strong> 縱向移動</a></li><li class="chapter-item expanded "><a href="mark.html"><strong aria-hidden="true">2.3.</strong> 標記</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html" class="active">簡介</a></li><li class="chapter-item expanded affix "><li class="part-title">基本操作</li><li class="chapter-item expanded "><a href="movement.html"><strong aria-hidden="true">1.</strong> 移動</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="basic-movement.html"><strong aria-hidden="true">1.1.</strong> 上下左右</a></li><li class="chapter-item expanded "><a href="vertical.html"><strong aria-hidden="true">1.2.</strong> 縱向移動</a></li><li class="chapter-item expanded "><a href="mark.html"><strong aria-hidden="true">1.3.</strong> 標記</a></li></ol></li><li class="chapter-item expanded "><a href="tab.html"><strong aria-hidden="true">2.</strong> 操作分頁</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="history.html"><strong aria-hidden="true">2.1.</strong> 分頁歷史</a></li><li class="chapter-item expanded "><a href="switch-tab.html"><strong aria-hidden="true">2.2.</strong> 切換分頁</a></li><li class="chapter-item expanded "><a href="new-tab.html"><strong aria-hidden="true">2.3.</strong> 新增與刪除分頁</a></li><li class="chapter-item expanded "><a href="shift-tab.html"><strong aria-hidden="true">2.4.</strong> 移動分頁</a></li></ol></li><li class="chapter-item expanded "><a href="interaction.html"><strong aria-hidden="true">3.</strong> 操作網頁</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="click.html"><strong aria-hidden="true">3.1.</strong> 點擊</a></li><li class="chapter-item expanded "><a href="focus.html"><strong aria-hidden="true">3.2.</strong> 聚焦</a></li><li class="chapter-item expanded "><a href="copy.html"><strong aria-hidden="true">3.3.</strong> 複製</a></li></ol></li><li class="chapter-item expanded "><a href="omnibar.html"><strong aria-hidden="true">4.</strong> Omnibar</a></li><li class="chapter-item expanded "><a href="visual-mode.html"><strong aria-hidden="true">5.</strong> Visual Mode</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="focus-text.html"><strong aria-hidden="true">5.1.</strong> 聚焦文字</a></li><li class="chapter-item expanded "><a href="move-in-visual-mode.html"><strong aria-hidden="true">5.2.</strong> 移動(Visual mode)</a></li><li class="chapter-item expanded "><a href="caret-mode.html"><strong aria-hidden="true">5.3.</strong> Caret Mode</a></li></ol></li><li class="chapter-item expanded "><a href="disable-key.html"><strong aria-hidden="true">6.</strong> 禁用按鍵</a></li><li class="chapter-item expanded "><a href="setting.html"><strong aria-hidden="true">7.</strong> 設定</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -174,16 +174,43 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="簡介"><a class="header" href="#簡介">簡介</a></h1>
-<p>Vimium-C 是 Vimium 專案的 fork，兩者都是幫助使用者只用鍵盤就能使用瀏覽器的 Chrome 插件
-與它相似的插件包含 Vimium, Surfing keys, Vimium-ff, Vimari</p>
+<p>Vimium-C 是 Vimium 的一個分支，它是一個開源的瀏覽器插件，提供了類似 Vim 風格的鍵盤快捷鍵來進行瀏覽器操作。Vimium-C 的開發旨在為使用者提供更快速、更穩定的瀏覽體驗，並添加了一些新的功能和改進。與原始的 Vimium 相比，Vimium-C 具有更多的自訂選項和更好的性能。</p>
+<p>與它相似的插件包含 Vimium, Surfing keys, Vimium-ff, Vimari.</p>
+<h2 id="為什麼不要用滑鼠"><a class="header" href="#為什麼不要用滑鼠">為什麼不要用滑鼠</a></h2>
+<ul>
+<li>空間</li>
+<li>沒有帶</li>
+<li>效率</li>
+<li>提高專注</li>
+<li>減少手部移動</li>
+<li>比 Chrome 原生快捷鍵更多功能、可自訂性</li>
+<li>不夠 vim</li>
+</ul>
+<h2 id="與-vim-的相似處"><a class="header" href="#與-vim-的相似處">與 Vim 的相似處</a></h2>
+<ul>
+<li>hjkl 方向</li>
+<li>數字＋動作＋移動</li>
+<li>多模式（normal, visual, insert,...）</li>
+<li>強調鍵盤移動</li>
+</ul>
 <h2 id="使用"><a class="header" href="#使用">使用</a></h2>
+<ol>
+<li><a href="https://chromewebstore.google.com/detail/vimium-c-%E5%85%A8%E9%94%AE%E7%9B%98%E6%93%8D%E4%BD%9C%E6%B5%8F%E8%A7%88%E5%99%A8/hfjbmagddngcpeloejdejnfgbamkjaeg?hl=zh-TW">下載 Chrome 插件</a></li>
+<li><del>丟掉滑鼠</del> 學習 keybinding</li>
+<li>不斷調設定</li>
+</ol>
+<h2 id="注意事項"><a class="header" href="#注意事項">注意事項</a></h2>
+<ul>
+<li>使用 Vimium-C 之前，要先注意瀏覽器的焦點在哪，先 escape 以後再使用，如果還是卡住，tab 後再 escape</li>
+<li>Google 官方的頁面預設不能使用插件，需要額外設定或使用原生快捷鍵</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
-                            <a rel="next prefetch" href="vim-motion.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="movement.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -194,7 +221,7 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                    <a rel="next prefetch" href="vim-motion.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="movement.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
