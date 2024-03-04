@@ -22,6 +22,10 @@
   - [聚焦文字](./focus-text.md)
   - [移動(Visual mode)](./move-in-visual-mode.md)
   - [Caret Mode](./caret-mode.md)
-- [禁用按鍵](./disable-key.md)
 - [設定](./setting.md)
-
+  - [禁用按鍵](./disable-key.md)
+  - [自訂快捷鍵](./keymap.md)
+  - [自訂搜尋引擎](./search.md)
+  - [自訂主題](./style.md)
+  - [其他設定](./other-settings.md)
+- [下一步?](./next-step.md)
