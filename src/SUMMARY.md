@@ -4,8 +4,24 @@
 
 # 基本操作
 
-- [Vim Motion 簡介](./vim-motion.md)
 - [移動](./movement.md)
   - [上下左右](./basic-movement.md)
   - [縱向移動](./vertical.md)
   - [標記](./mark.md)
+- [操作分頁](./tab.md)
+  - [分頁歷史](./history.md)
+  - [切換分頁](./switch-tab.md)
+  - [新增與刪除分頁](./new-tab.md)
+  - [移動分頁](./shift-tab.md)
+- [操作網頁](./interaction.md)
+  - [點擊](./click.md)
+  - [聚焦](./focus.md)
+  - [複製](./copy.md)
+- [Omnibar](./omnibar.md)
+- [Visual Mode](./visual-mode.md)
+  - [聚焦文字](./focus-text.md)
+  - [移動(Visual mode)](./move-in-visual-mode.md)
+  - [Caret Mode](./caret-mode.md)
+- [禁用按鍵](./disable-key.md)
+- [設定](./setting.md)
+

@@ -54,12 +54,10 @@
         - zj*
         - zk*
         - Z*
-
+    - r
 - Shift Tabs
     - <*
     - >*
-- Load
-    - r
 
 ## Interaction
 
@@ -98,8 +96,6 @@
     - ge
     - gE
     - T
-    - p (search what's in your clipboard)
-    - P
 - Advanced
     - flags: `:h` for history
 - Custom

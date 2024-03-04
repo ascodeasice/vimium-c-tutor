@@ -1,0 +1,26 @@
+# 操作網頁
+
+- Click
+  - f
+  - F
+  - \<a-f\>
+  - C*
+  - [*
+  - ]*
+  - a*
+  - A*
+- Focus && Hover
+  - s*
+  - S*
+  - esc
+    - Escape before do any action
+    - if stuck on top bar and can't escape, do a tab then escape
+  - gf: focus on next frame
+  - gF: focus on main frame
+  - gi + tab
+- Copy
+  - yy
+  - yh* (currentTitle)
+  - yp* (copy the screenshot)
+  - ym*
+  - yf
