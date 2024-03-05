@@ -1,6 +1,7 @@
 # Summary
 
 [簡介](./introduction.md)
+[關於我](./about-me.md)
 
 # 基本操作
 
