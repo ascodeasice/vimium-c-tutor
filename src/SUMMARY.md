@@ -28,5 +28,6 @@
   - [自訂快捷鍵](./keymap.md)
   - [自訂搜尋引擎](./search.md)
   - [自訂主題](./style.md)
+  - [閱讀 PDF 檔](./pdf.md)
   - [其他設定](./other-settings.md)
 - [下一步?](./next-step.md)
